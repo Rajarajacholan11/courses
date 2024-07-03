@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+</head>
+<body>
+      <!--courses-->
+    <div    class="container-fluid">
+      <section  id="courses">
+         <div  class="text">
+          <h2>our Top courses</h2>
+        </div>
+        <div class="container courses">
+          <div class="row courses ">
+            <div class="col" id="hcol1">
+                <div class="slider">
+                  <div class="slides">
+                  <input type="radio" name="radios" id="radio1">
+                  <input type="radio" name="radios" id="radio2">
+                  <input type="radio" name="radios" id="radio3">
+                  
+                  <div class="slide first">
+                    <img src="Images/Python Masterclass Course Ad Post Template - Made with PosterMyWall.jpg" alt="img">
+                  </div>
+                  <div class="slide">
+                      <img src="Images/web development services - Made with PosterMyWall.jpg" alt="img">
+                  </div>
+                  <div class="slide">
+                      <img src="Images/web development services TEMPLATE - Made with PosterMyWall.jpg" alt="img">
+                  </div>
+                  <div class="auto">
+                    <div class="auto1"></div>
+                    <div class="auto2"></div>
+                    <div class="auto3"></div>
+                  </div>
+                
+
+                </div>
+                <div class="manual">
+                  <label for="radio1" class="manuals"></label>
+                  <label for="radio2" class="manuals"></label>
+                  <label for="radio3" class="manuals"></label>
+                  </div>
+
+            </div>
+           
+
+          </div> 
+         
+         </div>
+        </div>
+        <script>
+          var counter=1;
+          setInterval(function(){
+            document.getElementById("radio"+counter).checked=true;
+            counter=counter+1;
+            if(counter>3)
+            {
+              counter=1;
+            }
+            
+          },3000);
+        </script> 
+
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
+  
+      </script>
+    </div>
+</body>
+</html>

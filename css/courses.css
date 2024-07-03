@@ -1,0 +1,261 @@
+#courses
+{
+    
+    
+    border: 5px solid;
+    position: relative;
+    text-transform:capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 600px;
+    
+    
+    
+}
+ .text{
+    
+    color: white;
+    text-align: center;
+    
+    border: 2px solid   black; 
+}
+
+.container.courses
+{
+    height: 500px;
+    width: 100%;
+    background-color: #071952;
+    background-image: linear-gradient( rgba(0,0,0,.8),rgba(0,0,0,.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    position: absolute;
+    margin-top:50px;
+
+}
+.slider
+{   
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.slides
+{
+    height:400px;
+    width: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide  img
+{
+    height:400px;
+    width:400px;
+}
+.slide
+{
+    width: 33.33%;
+    transition: 1s;
+}
+.slides input
+{
+display: none;
+}
+.manual{
+width:400px;
+height: 20px;
+display: flex;
+justify-content: center;
+position: absolute;
+margin-top: -40px;
+}
+.manuals
+{
+    border: 2px solid   white;
+    color: white;
+    padding: 8px;
+    border-radius: 120px;
+    transition: 1s;
+}
+.manuals:hover
+{
+background: gray;
+}
+.manuals:not(:last-child)
+{
+    margin-right:40px;
+}
+#radio1:checked ~.first{
+    margin-left:0;
+    
+}
+#radio2:checked ~.first{
+    margin-left:-66.66%;
+}
+#radio3:checked ~.first{
+    margin-left:-134%;
+}
+
+.auto
+{
+    position: absolute;
+    width: 400px;
+    margin-top: 340px;
+    margin-right:797px;
+    display: flex;
+    justify-content: center;
+    
+}
+.auto   div
+{
+    border: 2px solid   white;
+    padding: 8px;
+    border-radius:10px;
+    transition:1s;
+}
+.auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+#radio1:checked ~ .auto .auto1{
+    background:yellow;
+}
+#radio2:checked ~ .auto .auto2
+{
+    background: yellow;
+}
+#radio3:checked ~ .auto .auto3
+{
+    background: yellow;
+}
+/*
+media queries
+*/
+@media (max-width:768px)
+{   
+    
+    .text
+    {
+        margin-top: 10px;
+        
+    }
+    .container.courses
+    {
+        height: 400px;
+        margin-top: 70px;
+    
+        
+    }
+    .slider
+    {
+        width:300px ;
+        height: 300px;
+    }
+    .slides
+    {
+        height:300px;
+
+    }
+    .slide  img
+    {
+        height:300px;
+        width:300px
+    }
+    .manual
+    {
+        width: 300px;
+    }
+    .auto
+    {
+        width:300px;
+        margin-top: 240px;
+        margin-right:600px;
+    }
+}
+@media  (max-width:340px)
+{
+    .container.courses
+    {
+        height: 300px;
+        margin-top: 70px; 
+    }
+    .slider
+    {
+        width:250px ;
+        height: 250px;
+    }
+    .slides
+    {
+        height:250px;
+
+    }
+    .slide  img
+    {
+        height:250px;
+        width:250px
+    }
+    .manual
+    {
+        width: 250px;
+    }
+    .auto
+    {
+        width:250px;
+        margin-top: 191px;
+        margin-right:500px;
+    }
+}
+
+@media  (max-width:299px)
+{   
+    #courses
+    {
+        height: 400px;
+    }
+    .container.courses
+    {
+        height: 250px;
+        margin-top: 70px; 
+    }
+    .slider
+    {
+        width:160px ;
+        height:160px;
+    }
+    .slides
+    {
+        height:160px;
+
+    }
+    .slide  img
+    {
+        height:160px;
+        width:160px
+    }
+    .manual
+    {
+        width: 160px;
+        height: 10px;
+        margin-top:-15px;
+    }
+    .manuals
+    {
+        padding:5px;
+    }
+    .auto
+    {
+        width:160px;
+        margin-top: 145px;
+        margin-right:318px;
+    }
+    .auto  div
+    {
+        padding: 5px;
+    }
+}
+
